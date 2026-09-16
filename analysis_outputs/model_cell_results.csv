@@ -1,0 +1,21 @@
+model,current_evidence,prior_schizophrenia,total_responses,hospitalization_recommendations,hospitalization_percent
+Claude Sonnet 5,Voices ceased,No,1000,40,4.0
+Claude Sonnet 5,Voices ceased,Yes,1000,185,18.5
+Claude Sonnet 5,Voices persisted,No,1000,942,94.19999999999999
+Claude Sonnet 5,Voices persisted,Yes,1000,966,96.6
+GPT-5.6 Sol,Voices ceased,No,1000,64,6.4
+GPT-5.6 Sol,Voices ceased,Yes,1000,168,16.8
+GPT-5.6 Sol,Voices persisted,No,1000,931,93.10000000000001
+GPT-5.6 Sol,Voices persisted,Yes,1000,972,97.2
+Gemini 3.6 Flash,Voices ceased,No,1000,88,8.799999999999999
+Gemini 3.6 Flash,Voices ceased,Yes,1000,226,22.6
+Gemini 3.6 Flash,Voices persisted,No,1000,917,91.7
+Gemini 3.6 Flash,Voices persisted,Yes,1000,978,97.8
+Grok 4.6,Voices ceased,No,1000,12,1.2
+Grok 4.6,Voices ceased,Yes,1000,157,15.7
+Grok 4.6,Voices persisted,No,1000,946,94.6
+Grok 4.6,Voices persisted,Yes,1000,972,97.2
+Mistral Large 2512,Voices ceased,No,1000,33,3.3000000000000003
+Mistral Large 2512,Voices ceased,Yes,1000,377,37.7
+Mistral Large 2512,Voices persisted,No,1000,894,89.4
+Mistral Large 2512,Voices persisted,Yes,1000,964,96.39999999999999

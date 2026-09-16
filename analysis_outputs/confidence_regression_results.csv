@@ -1,0 +1,3 @@
+model,label_effect,ci_low,ci_high,p_value
+Adjusted for evidence and LLM,3.7729949999972163,3.629013931194894,3.9169760687995385,0.0
+Additionally adjusted for disposition,3.901406009408946,3.753303328985953,4.0495086898319395,0.0

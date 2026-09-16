@@ -1,0 +1,5 @@
+current_evidence,prior_schizophrenia,n,concordant_responses,concordance_rate,concordance_percent
+Voices ceased,No,5000,4763,0.9526,95.26
+Voices ceased,Yes,5000,3887,0.7774,77.74
+Voices persisted,No,5000,4630,0.926,92.60000000000001
+Voices persisted,Yes,5000,4852,0.9704,97.04

@@ -1,0 +1,5 @@
+current_evidence,prior_schizophrenia,total_responses,hospitalization_recommendations,hospitalization_percent
+Voices ceased,No,5000,237,4.74
+Voices ceased,Yes,5000,1113,22.259999999999998
+Voices persisted,No,5000,4630,92.60000000000001
+Voices persisted,Yes,5000,4852,97.04
