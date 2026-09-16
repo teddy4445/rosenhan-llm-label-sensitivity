@@ -24,7 +24,6 @@ Condition labels used in every file:
 | `confidence_cell_results.csv` | Mean, SD and median confidence for each of the 20 cells |
 | `confidence_label_effects.csv` | Label effect per model and evidence condition: mean difference with 95% CI, Cohen's d, Welch t and df, p, and Holm-adjusted p |
 | `confidence_contrasts.csv` | The same contrasts with formatted column names |
-| `supplementary_table_confidence_contrasts.csv` | Identical to `confidence_contrasts.csv` |
 | `table_3_confidence_effects.csv` | Formatted mean differences and Cohen's d for the manuscript table |
 | `confidence_regression_results.csv` | Label effect from linear regression with HC3 standard errors, adjusted for evidence condition and model, and then also adjusted for the disposition recommendation |
 

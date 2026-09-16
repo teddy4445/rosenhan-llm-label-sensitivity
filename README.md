@@ -29,11 +29,7 @@ The runner targets these model IDs by default:
 
 Model IDs and endpoints can be overridden through `.env` without editing the script. The provider-returned model identifier is also recorded for every call, which helps audit hosted aliases that may change over time.
 
-## Important manuscript consistency note
-
-The supplied manuscript draft's Supplementary Vignettes 3 and 4 have an apparent transposition: the vignette headed **“no prior psychiatric diagnosis stated”** contains the sentence saying a previous schizophrenia diagnosis was documented, while the vignette headed **“previous schizophrenia diagnosis documented”** contains the no-history sentence.
-
-`rosenhan_llm_experiment.py` follows the **intended factorial design stated in the Methods** rather than reproducing that apparent draft error. The four vignettes are generated programmatically from a common base so that only the psychiatric-background sentence and current-evidence paragraph can change.
+The four vignettes are generated programmatically from a common base, so only the psychiatric-background sentence and the current-evidence paragraph can change between conditions.
 
 ## Repository layout
 
@@ -41,6 +37,7 @@ The supplied manuscript draft's Supplementary Vignettes 3 and 4 have an apparent
 .
 ├── rosenhan_llm_experiment.py   # Complete experiment runner
 ├── README.md                    # This file
+├── analysis_outputs/            # Study 1 summary tables (see analysis_outputs/README.md)
 ├── .env                         # Local API keys; do not commit
 └── results/                     # Created automatically
     ├── responses.csv            # Response-level data
@@ -103,9 +100,9 @@ XAI_ENDPOINT=https://api.x.ai/v1/responses
 MISTRAL_ENDPOINT=https://api.mistral.ai/v1/chat/completions
 ```
 
-The script uses the maximum-output-token values reported in the draft supplementary model table by default: 128,000 for OpenAI and Anthropic and 65,536 for Gemini, xAI, and Mistral. They can be overridden with `OPENAI_MAX_OUTPUT_TOKENS`, `ANTHROPIC_MAX_OUTPUT_TOKENS`, `GEMINI_MAX_OUTPUT_TOKENS`, `XAI_MAX_OUTPUT_TOKENS`, and `MISTRAL_MAX_OUTPUT_TOKENS`.
+The script uses the maximum-output-token values reported in Supplementary Table 1 of the manuscript by default: 128,000 for OpenAI and Anthropic and 65,536 for Gemini, xAI, and Mistral. They can be overridden with `OPENAI_MAX_OUTPUT_TOKENS`, `ANTHROPIC_MAX_OUTPUT_TOKENS`, `GEMINI_MAX_OUTPUT_TOKENS`, `XAI_MAX_OUTPUT_TOKENS`, and `MISTRAL_MAX_OUTPUT_TOKENS`.
 
-The manuscript draft does not yet fully specify temperature/top-p. The runner therefore leaves them at **provider defaults** unless you explicitly set:
+By default the runner leaves temperature and top-p at **provider defaults**. To set them explicitly:
 
 ```dotenv
 EXPERIMENT_TEMPERATURE=1.0
@@ -250,4 +247,4 @@ When the paper is posted or published, replace this placeholder with the permane
 
 ## License
 
-Add the license selected by the authors before making the repository public. For research code intended for broad reuse, MIT or Apache-2.0 are common choices; the appropriate choice depends on the authors' and institutions' requirements.
+Released under the MIT License. See `LICENSE`.
