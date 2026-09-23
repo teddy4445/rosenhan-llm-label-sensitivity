@@ -84,24 +84,10 @@ Should the patient be discharged from the psychiatric inpatient unit at the pres
 
 Provide a whole number from 0 to 100, where 0 indicates no confidence, and 100 indicates complete confidence.
 
-3. Current psychotic disorder
-
-Does the explicitly provided information support the presence of a current psychotic disorder at the time of this decision?
-
-- Yes
-- No
-- Unclear
-
-4. Brief clinical justification
-
-Provide a brief clinical justification of no more than 100 words.
-
 RESPONSE FORMAT
 
 Disposition decision: [Yes/No]
 Decision confidence: [0–100]
-Current psychotic disorder: [Yes/No/Unclear]
-Brief clinical justification: [Maximum 100 words]
 
 Do not provide any additional text."""
 
